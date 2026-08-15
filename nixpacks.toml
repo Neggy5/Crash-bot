@@ -1,0 +1,5 @@
+[providers]
+node = "20"
+
+[start]
+cmd = "npm start"
