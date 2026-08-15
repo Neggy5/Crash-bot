@@ -1,1 +1,1 @@
-worker: node crash_bot.js
+worker: node ban_bot.js
