@@ -1,10 +1,8 @@
 {
-  "name": "crash-delivery-bot",
+  "name": "whatsapp-ban-bot",
   "version": "1.0.0",
-  "description": "Telegram bot for crash payload delivery",
-  "main": "crash_bot.js",
   "scripts": {
-    "start": "node crash_bot.js"
+    "start": "node ban_bot.js"
   },
   "dependencies": {
     "node-telegram-bot-api": "^0.64.0"
