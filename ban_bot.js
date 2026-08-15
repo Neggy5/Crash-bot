@@ -55,39 +55,4 @@ bot.onText(/\/help/, (msg) => {
     bot.sendMessage(msg.chat.id, 'Use /start to see commands.');
 });
 
-console.log('✅ WhatsApp Ban Bot is running!');        return bot.sendMessage(msg.chat.id, '⛔ Unauthorized.');
-    }
-
-    const chatId = msg.chat.id;
-    const filePath = path.join('/tmp', 'crash.py');
-    const fileExists = fs.existsSync(filePath);
-
-    const status = `
-💀 *Bot Status*
-
-📡 Online: ✅
-📁 Payload: ${fileExists ? '✅' : '❌'}
-📱 Target: Ready
-🕐 ${new Date().toLocaleString()}
-`;
-
-    bot.sendMessage(chatId, status, { parse_mode: 'Markdown' });
-});
-
-// Help Command
-bot.onText(/\/help/, (msg) => {
-    if (!isAuthorized(msg)) {
-        return bot.sendMessage(msg.chat.id, '⛔ Unauthorized.');
-    }
-    bot.sendMessage(msg.chat.id, 'Use /start to see all commands.');
-});
-
-// Fallback for any other message
-bot.on('message', (msg) => {
-    if (!isAuthorized(msg)) return;
-    if (msg.text && !msg.text.startsWith('/')) {
-        bot.sendMessage(msg.chat.id, '❌ Unknown command. Use /start for help.');
-    }
-});
-
-console.log('✅ Bot is running!');
+console.log('✅ WhatsApp Ban Bot is running!');
